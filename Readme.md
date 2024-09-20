@@ -8,7 +8,7 @@
 
 `git clone https://github.com/MilanKutnaGora/AI_chat_bot`
 
-`cd github_api_test`
+`cd AI_chat_bot`
 
 #### 2. Create a virtual environment and activate it:
 
@@ -24,7 +24,7 @@
 
 `pip install -r requirements.txt`
 
-#### 4. Create a `.env` file in the project root and add your GitHub credentials:
+#### 4. Create a `secret.toml`:
 
 `CLIENT_ID =`
 
@@ -33,5 +33,5 @@
 
 #### To run the bot, execute the following command:
 
-`streamlit run app.py`
+`streamlit run main.py`
 
