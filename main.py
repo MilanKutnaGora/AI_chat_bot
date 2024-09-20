@@ -2,7 +2,7 @@ import streamlit as st
 
 from chat_bot_api import get_access_token, send_prompt, sent_prompt_and_get_response
 
-st.title("Чат бот")
+st.title("Чат бот на базе GigaChat")
 
 if "access_token" not in st.session_state:
     try:
@@ -12,7 +12,7 @@ if "access_token" not in st.session_state:
         st.toast(f"Не получилось получить токен: {e}")
 
 if "messages" not in st.session_state:
-    st.session_state.messages = [{"role": "ai", "content": "С чем вам помочь?"}]
+    st.session_state.messages = [{"role": "ai", "content": "Здравствуйте! Чем могу помочь?"}]
 
 for msg in st.session_state.messages:
     if msg.get("is_image"):
